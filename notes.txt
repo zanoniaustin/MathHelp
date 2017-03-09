@@ -6,4 +6,4 @@ linking it to the master branch.
  
  
  Austin: So for the project I am right now looking into Tkinter as the GUI portion of our code if anyone has any better ideas or 
-          something already in the works let me know otherwise I'm gonna keep going tdown this path.
+          something already in the works let me know otherwise I'm gonna keep going tdown this path. 
