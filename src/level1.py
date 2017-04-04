@@ -1,25 +1,30 @@
 import random
 
 def level1():
-    a = random.randrange(-10,10,1)
-    b = random.randrange(-10,10,1)
-
-
-    s = random.randrange(0,2,1)
+    num1 = random.randrange(-10,10,1)
+    num2 = random.randrange(-10,10,1)
+    add_sub = random.randrange(0,2,1)
     done = False
     while done == False:
-        if s == 0:
-            c = a + b
-            print(a, ' + ', b, ' = ',end = '')
+        if add_sub == 0:
+            realans = num1 + num2
+            print(num1, ' + ', num2, ' = ',end = '')
         else:
-            c = a - b
-            print(a, ' - ', b, ' = ',end = '')
+            realans = num1 - num2
+            print(num1, ' - ', num2, ' = ',end = '')
         
         ans = input()
-        if ans.isnumeric():
+        if ans[:1] == '-' and ans[1:].isnumeric():
             done = True
             ans = int(ans)
-            if ans == c:
+            if ans == realans:
+                print("correct")
+            else:
+                print("incorrect")
+        elif ans.isnumeric():
+            done = True
+            ans = int(ans)
+            if ans == realans:
                 print("correct")
             else:
                 print("incorrect")
@@ -28,7 +33,6 @@ def level1():
             done = False
     
 
-n = 0;
 for i in range(11):
     level1()
 
