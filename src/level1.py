@@ -1,8 +1,8 @@
 import random
 
 def level1():
-    num1 = random.randrange(-10,10,1)
-    num2 = random.randrange(-10,10,1)
+    num1 = random.randrange(-10,11,1)
+    num2 = random.randrange(-10,11,1)
     add_sub = random.randrange(0,2,1)
     done = False
     while done == False:

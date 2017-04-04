@@ -29,35 +29,35 @@ def level2():
     if mul_div == 0:
         deno = random.randrange(2,11)
         if deno == 2:
-            nume = random.randrange(-50,50,2)
+            nume = random.randrange(-50,52,2)
             printfun(nume,deno)            
         elif deno == 3:
-            nume = random.randrange(-45,45,3)
+            nume = random.randrange(-45,48,3)
             printfun(nume,deno)
         elif deno == 4:
-            nume = random.randrange(-44,44,4)
+            nume = random.randrange(-44,48,4)
             printfun(nume,deno)
         elif deno == 5:
-            nume = random.randrange(-100,100,5)
+            nume = random.randrange(-100,105,5)
             printfun(nume,deno)
         elif deno == 6:
-            nume = random.randrange(-66,66,6)
+            nume = random.randrange(-66,72,6)
             printfun(nume,deno)
         elif deno == 7:
-            nume = random.randrange(-77,77,7)
+            nume = random.randrange(-77,85,7)
             printfun(nume,deno)
         elif deno == 8:
-            nume = random.randrange(-88,88,8)
+            nume = random.randrange(-88,96,8)
             printfun(nume,deno)
         elif deno == 9:
-            nume = random.randrange(-99,99,9)
+            nume = random.randrange(-99,108,9)
             printfun(nume,deno)
         elif deno == 10:
-            nume = random.randrange(-1000,1000,10)
+            nume = random.randrange(-1000,1010,10)
             printfun(nume,deno)
     else:
-        num1 = random.randrange(-10,10,1)
-        num2 = random.randrange(-10,10,1)
+        num1 = random.randrange(-10,11,1)
+        num2 = random.randrange(-10,11,1)
         realans = num1 * num2
         done = False
         while done == False:
