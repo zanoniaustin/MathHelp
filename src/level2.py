@@ -81,5 +81,3 @@ def level2():
                 print("Must input numbers only.")
                 done = False
 
-for i in range(10):
-    level2()
