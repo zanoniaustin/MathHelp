@@ -73,6 +73,4 @@ def level3():
         printfun2(num1,num2,expo1,expo2,'+')
     else:
         printfun2(num1,num2,expo1,expo2,'-')
-   
-for i in range(11):
-    level3()
+

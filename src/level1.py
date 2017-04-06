@@ -33,7 +33,5 @@ def level1():
             done = False
     
 
-for i in range(11):
-    level1()
 
 
