@@ -22,7 +22,6 @@ def printfun1(num1, expo1):
                 print("incorrect")
         else:
             print("Must input numbers only.")
-            done = False
 
 def printfun2(num1,num2,expo1,expo2,sym):
     done = False
@@ -50,7 +49,6 @@ def printfun2(num1,num2,expo1,expo2,sym):
                 print("incorrect")
         else:
             print("Must input numbers only.")
-            done = False
     
 
 def level3():
@@ -74,3 +72,5 @@ def level3():
     else:
         printfun2(num1,num2,expo1,expo2,'-')
 
+for i in range(10):
+    level3()
