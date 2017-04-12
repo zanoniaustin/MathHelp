@@ -30,8 +30,8 @@ def level1():
                 print("incorrect")
         else:
             print("Must input numbers only.")
-            done = False
     
-
+for i in range(10):
+    level1()
 
 

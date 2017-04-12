@@ -22,7 +22,6 @@ def printfun(nume, deno):
                 print("incorrect")
         else:
             print("Must input numbers only.")
-            done = False
 
 def level2():
     mul_div = random.randrange(0,2,1)
@@ -79,5 +78,7 @@ def level2():
                     print("incorrect")
             else:
                 print("Must input numbers only.")
-                done = False
+
+for i in range(10):
+    level2()
 
