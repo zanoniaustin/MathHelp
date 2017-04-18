@@ -1,54 +1,30 @@
 import random
 
-def printfun1(num1, expo1):
-    done = False
-    while done == False:
-        realans = pow(num1,expo1)
-        print(num1, '^', expo1, ' = ',end ='')
-        ans = input()
-        if ans[:1] == '-' and ans[1:].isnumeric():
-            done = True
-            ans = int(ans)
-            if ans == realans:
-                print("correct")
+def printfun(realans, function):
+    correct = False
+    while correct == False:
+        done = False
+        while done == False:
+            print(function, end = '')
+            ans = input()
+            if ans[:1] == '-' and ans[1:].isnumeric():
+                done = True
+                ans = int(ans)
+                if ans == realans:
+                    print("correct")
+                    correct = True
+                else:
+                    print("incorrect")
+            elif ans.isnumeric():
+                done = True
+                ans = int(ans)
+                if ans == realans:
+                    print("correct")
+                    correct = True
+                else:
+                    print("incorrect")
             else:
-                print("incorrect")
-        elif ans.isnumeric():
-            done = True
-            ans = int(ans)
-            if ans == realans:
-                print("correct")
-            else:
-                print("incorrect")
-        else:
-            print("Must input numbers only.")
-
-def printfun2(num1,num2,expo1,expo2,sym):
-    done = False
-    while done == False:
-        if sym == '+':
-            realans = pow(num1,expo1) + pow(num2,expo2)
-            print(num1,'^',expo1,' + ',num2,'^',expo2,' = ',end='')
-        else:
-            realans = pow(num1,expo1) - pow(num2,expo2)
-            print(num1,'^',expo1,' - ',num2,'^',expo2,' = ',end='')
-        ans = input()
-        if ans[:1] == '-' and ans[1:].isnumeric():
-            done = True
-            ans = int(ans)
-            if ans == realans:
-                print("correct")
-            else:
-                print("incorrect")
-        elif ans.isnumeric():
-            done = True
-            ans = int(ans)
-            if ans == realans:
-                print("correct")
-            else:
-                print("incorrect")
-        else:
-            print("Must input numbers only.")
+                print("Must input numbers only.")
     
 
 def level3():
@@ -66,11 +42,15 @@ def level3():
     switch = random.randrange(0,3,1)
     
     if switch == 0:
-        printfun1(num1,expo1)
+        realans = pow(num1,expo1)
+        function = str(num1) + '^' + str(expo1) + ' = '
     elif switch == 1:
-        printfun2(num1,num2,expo1,expo2,'+')
+        realans = pow(num1,expo1) + pow(num2,expo2)
+        function = str(num1) + '^' + str(expo1) + ' + ' + str(num2) + '^' + str(expo2) + ' = '
     else:
-        printfun2(num1,num2,expo1,expo2,'-')
+        realans = pow(num1,expo1) - pow(num2,expo2)
+        function = str(num1) + '^' + str(expo1) + ' - ' + str(num2) + '^' + str(expo2) + ' = '
+    printfun(realans, function)
 
 for i in range(10):
     level3()
