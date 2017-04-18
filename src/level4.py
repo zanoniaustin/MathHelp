@@ -5,6 +5,7 @@ def add_sub_mul(num1, num2,function,trigger):
         switch = random.randrange(0,3,1)
     else:
         switch = random.randrange(0,2,1)
+        
     if switch == 0:
         function = function + str(num1) + ' + ' + str(num2)
         return num1+num2,function
@@ -16,26 +17,30 @@ def add_sub_mul(num1, num2,function,trigger):
         return num1*num2,function
 
 def printfun(function,realans):
-    done = False
-    while done == False:    
-        print(function, end = '')
-        ans = input()
-        if ans[:1] == '-' and ans[1:].isnumeric():
-            done = True
-            ans = int(ans)
-            if ans == realans:
-                print('correct')
+    correct = False
+    while correct == False:
+        done = False
+        while done == False:    
+            print(function, end = '')
+            ans = input()
+            if ans[:1] == '-' and ans[1:].isnumeric():
+                done = True
+                ans = int(ans)
+                if ans == realans:
+                    print('correct')
+                    correct = True
+                else:
+                    print('incorrect')
+            elif ans.isnumeric():
+                done = True
+                ans = int(ans)
+                if ans == realans:
+                    print('correct')
+                    correct = True
+                else:
+                    print('incorrect')
             else:
-                print('incorrect')
-        elif ans.isnumeric():
-            done = True
-            ans = int(ans)
-            if ans == realans:
-                print('correct')
-            else:
-                print('incorrect')
-        else:
-            print("Must input numbers only.")
+                print("Must input numbers only.")
 
 def option1(num1,num2,num3):
     switch = random.randrange(0,3,1)
@@ -125,7 +130,7 @@ def level4():
         option3(num1,num2,num3,num4)
 
 
-for i in range(20):
+for i in range(5):
     level4()
 
 
