@@ -1,8 +1,8 @@
 import random
 
 def level1():
-    num1 = random.randrange(-10,11,1)
-    num2 = random.randrange(-10,11,1)
+    num1 = random.randrange(-50,51,1)
+    num2 = random.randrange(-50,51,1)
     add_sub = random.randrange(0,2,1)
     if add_sub == 0:
         realans = num1 + num2
