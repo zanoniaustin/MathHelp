@@ -15,27 +15,27 @@ class reepsButtons(tk.Frame):
 		self.mainmsg = Message(self, text="Welcome to Math Help! Please select a level!")
 		self.mainmsg.grid(row=1,columnspan=8,sticky=N)
 		
-		self.L1Button = Button(self,text="Level 1", command=self.Level)
+		self.L1Button = Button(self,text="Level 1", command=self.Level, bg="lawn green")
 		self.L1Button.grid(row=2)
 		self.L1text= Label(self, text="Addition and Subtraction")
 		self.L1text.grid(row=2,column=5)
 		
-		self.L2Button = Button(self,text="Level 2", command=self.Level)
+		self.L2Button = Button(self,text="Level 2", command=self.Level, bg="gold")
 		self.L2Button.grid(row=10)
 		self.L2text= Label(self, text="Multiplication and Division")
 		self.L2text.grid(row=10,column=5)
 		
-		self.L3Button = Button(self,text="Level 3", command=self.Level)
+		self.L3Button = Button(self,text="Level 3", command=self.Level, bg="orangered2")
 		self.L3Button.grid(row=15)
 		self.L3text= Label(self, text="Multiplication")
 		self.L3text.grid(row=15,column=5)
 		
-		self.L4Button = Button(self,text="Level 4", command=self.Level)
+		self.L4Button = Button(self,text="Level 4", command=self.Level, bg="red3")
 		self.L4Button.grid(row=70)
 		self.L4text= Label(self, text="Exponents")
 		self.L4text.grid(row=11,column=5)
 		
-		self.quitButton = Button(self, text="Quit", command = master.destroy)
+		self.quitButton = Button(self, text="Quit", command = master.destroy, bg="dim gray")
 		self.quitButton.grid(sticky=S)
 	def Level(self):
 		
