@@ -1,6 +1,6 @@
 # MathHelp
 
 
-The file that runs the program is the Beta05.py file, which will bring up the graphical interface for the application.
+Our final completed project is Beta05. This has all of the algorithms and the Tkinter all working together.
 
-Austin wrote most of the algorithms for the levels, Nate wrote the majority of the User Interface code, Mitchell helped Nate with the UI code and helped test the algorithms, and Sarah helped test the algorithms and UI.
+If you want to see what I, Austin, did in the src folder that has all the original algorithms for randomly generating the math problems that was then put into the Beta05 file.
