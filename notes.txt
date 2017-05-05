@@ -1,9 +1,0 @@
-Alright I thought that we could use this to kindof help keep everyone in the loop of things. If you have any comments that you want 
- others to know just go ahead and post it in here.
- 
-Also I think the best way to push code into master is to create your own branch upload your code then do a pull request to your branch
-linking it to the master branch.
- 
- 
- Austin: So for the project I am right now looking into Tkinter as the GUI portion of our code if anyone has any better ideas or 
-          something already in the works let me know otherwise I'm gonna keep going tdown this path. 
